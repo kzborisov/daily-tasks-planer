@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Done Deal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Header -->
+      <header>
+        <h1 class="heading">Done Deal</h1>
+        <p>World's Greatest Productivity Buddy</p>
+        <input type="text" id="search" placeholder="Search for a task" />
+      </header>
+
+      <!-- ToDo List -->
+      <div id="todo-list">
+        <h2 class="heading">My Tasks For The Day</h2>
+        <ul>
+          <li>
+            <span class="name">Buy food!</span>
+            <!-- <span class="delete-btn"> -->
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/dotty/80/delete.png"
+              alt="delete"
+            />
+            <!-- </span> -->
+          </li>
+          <li>
+            <span class="name">Take the trash out</span>
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/dotty/80/delete.png"
+              alt="delete"
+            />
+          </li>
+          <li>
+            <span class="name">Walk the dog</span>
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/dotty/80/delete.png"
+              alt="delete"
+            />
+          </li>
+          <li>
+            <span class="name">Pay the bills</span>
+
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/dotty/80/delete.png"
+              alt="delete"
+            />
+          </li>
+          <li>
+            <span class="name">Hit the gym</span>
+
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/dotty/80/delete.png"
+              alt="delete"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div class="mark-box">
+        <input type="checkbox" id="done" />
+        <label for="done">Mark All As Done</label>
+      </div>
+
+      <!-- Add Form -->
+      <form id="add-task">
+        <input id="new" type="text" placeholder="Add a new task..." />
+        <button>Add</button>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

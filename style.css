@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --primary: #d86d93;
+  --secondary: #3d3d3d;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Wrapper */
+
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0;
+  gap: 20px;
+  width: 640px;
+  margin: 20px auto;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+header h1 {
+  color: var(--primary);
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+}
+
+header #search {
+  letter-spacing: 0.2px;
+  font-size: 0.9rem;
+  transition: all 0.1s ease-in-out;
+  outline: none;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 10px 0;
+}
+
+header #search:focus {
+  outline: none;
+  box-shadow: 5px 5px 10px var(--primary);
+}
+/* Task List */
+
+#todo-list {
+  width: 100%;
+  max-width: 460px;
+  padding: 0 30px;
+}
+
+#todo-list h2 {
+  color: var(--secondary);
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+#todo-list ul {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#todo-list ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid var(--primary);
+  box-shadow: -5px 0px 5px var(--primary);
+  border-radius: 8px;
+  transition: all 0.1s ease-in-out;
+}
+
+#todo-list ul li.done {
+  background: var(--primary);
+  color: #fafafa;
+  text-decoration: line-through;
+}
+
+#todo-list ul li.done img {
+  filter: invert(1);
+}
+
+#todo-list ul li:hover {
+  box-shadow: -10px 5px 10px var(--primary);
+  scale: 1;
+}
+
+#todo-list ul li .name {
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+
+#todo-list ul li img {
+  margin-right: 10px;
+  padding: 3px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  transition: all 0.05s ease-in;
+}
+
+#todo-list ul li img:hover {
+  /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); */
+  scale: 1.1;
+}
+
+#todo-list ul li img:active {
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); */
+  scale: 1;
+}
+
+/* Checkbox */
+
+.mark-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.mark-box label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2px;
+}
+
+/* Form */
+#add-task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 460px;
+  padding: 0 30px;
+}
+
+#add-task input,
+button {
+  border: none;
+  outline: none;
+  letter-spacing: 0.2px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  font-size: 0.9rem;
+  transition: all 0.1s ease-in-out;
+}
+
+#add-task input {
+  padding: 15px 10px;
+  border: 1px solid var(--primary);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 70%;
+}
+
+#add-task button {
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 15px 10px;
+  width: 30%;
+}
+
+#add-task button:hover {
+  scale: 1.03;
+}
+
+#add-task button:active {
+  scale: 1;
+}
